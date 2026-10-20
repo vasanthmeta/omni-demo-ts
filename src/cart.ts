@@ -1,5 +1,5 @@
 export type Item = { price: number; qty: number };
-// Total of all items after the percentage discount, rounded to cents.
+// Sum of all items after the percentage discount, rounded to cents.
 
 export function total(items: Item[], discountPercent = 0): number {
   if (discountPercent < 0 || discountPercent > 100) throw new Error("discount must be between 0 and 100");
